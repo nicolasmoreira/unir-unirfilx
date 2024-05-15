@@ -1,0 +1,22 @@
+.search-bar__group {
+    margin-bottom: 20px;
+}
+
+.search-bar__input {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
+}
+
+.search-bar__button {
+    background-color: #e50914;
+    border: none;
+}
+
+.search-bar__button:hover {
+    background-color: #b81d24;
+}
+
+.search-bar__results {
+    margin-top: 20px;
+}

@@ -1,0 +1,21 @@
+.movie-list__row {
+    margin-top: 20px;
+}
+
+.movie-list__card {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+}
+
+.movie-list__title {
+    color: #ffffff;
+}
+
+.movie-list__subtitle {
+    color: #b3b3b3;
+}
+
+.movie-list__text {
+    color: #e0e0e0;
+}
