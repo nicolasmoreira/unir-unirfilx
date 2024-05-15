@@ -8,6 +8,10 @@ const MovieDetail = () => {
     const { id } = useParams();
     const movie = movies.find(movie => movie.id === parseInt(id));
 
+    if (!movie) {
+        return <div>Película no encontrada</div>;
+    }
+
     return (
         <div className="movie-detail container">
             <h1>{movie.title}</h1>
