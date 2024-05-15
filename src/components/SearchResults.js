@@ -1,7 +1,7 @@
 import React from 'react';
 import './SearchResults.css';
 
-const SearchResults = ({ results }) => (
+const SearchResults = ({ results = [] }) => (
     <div className="search-results container">
         <div className="row">
             {results.map(movie => (

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -10,20 +10,20 @@ import PurchasePage from './components/PurchasePage';
 import './App.css';
 
 function App() {
-  return (
-      <Router>
-        <Header />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/movies" component={MovieList} />
-          <Route path="/movies/:id" component={MovieDetail} />
-          <Route path="/search" component={SearchResults} />
-          <Route path="/rentals" component={RentalPage} />
-          <Route path="/purchases" component={PurchasePage} />
-        </Switch>
-        <Footer />
-      </Router>
-  );
+    return (
+        <Router>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/movies" element={<MovieList />} />
+                <Route path="/movies/:id" element={<MovieDetail />} />
+                <Route path="/search" element={<SearchResults />} />
+                <Route path="/rentals" element={<RentalPage />} />
+                <Route path="/purchases" element={<PurchasePage />} />
+            </Routes>
+            <Footer />
+        </Router>
+    );
 }
 
 export default App;
