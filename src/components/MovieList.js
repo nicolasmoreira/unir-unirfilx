@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { movies } from '../data';
+import {Link} from 'react-router-dom';
+import {movies} from '../data';
 import './MovieList.css';
 
 const MovieList = () => (

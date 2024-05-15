@@ -4,18 +4,19 @@ export const RentalContext = createContext();
 
 export const RentalProvider = ({ children }) => {
     const [rentals, setRentals] = useState([]);
-    const [purchases, setPurchases] = useState([]);
 
     const addRental = (movie) => {
-        setRentals([...rentals, movie]);
+        if (!rentals.find(rental => rental.id === movie.id)) {
+            setRentals([...rentals, movie]);
+        }
     };
 
-    const addPurchase = (movie) => {
-        setPurchases([...purchases, movie]);
+    const returnRental = (movieId) => {
+        setRentals(rentals.filter(rental => rental.id !== movieId));
     };
 
     return (
-        <RentalContext.Provider value={{ rentals, addRental, purchases, addPurchase }}>
+        <RentalContext.Provider value={{ rentals, addRental, returnRental }}>
             {children}
         </RentalContext.Provider>
     );

@@ -1,31 +1,10 @@
 body {
-  background-color: #141414;
-  color: #ffffff;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #141414;
+    color: #ffffff;
 }
 
-.header, .navbar {
-  background-color: #e50914;
-}
-
-.nav-link {
-  color: #ffffff;
-}
-
-.nav-link:hover {
-  color: #b81d24;
-}
-
-.card {
-  background-color: #333333;
-  color: #ffffff;
-  border: none;
-}
-
-.btn-primary {
-  background-color: #e50914;
-  border: none;
-}
-
-.btn-primary:hover {
-  background-color: #b81d24;
+.container {
+    padding-top: 20px;
 }

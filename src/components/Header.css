@@ -1,11 +1,28 @@
 .header {
-    background-color: #e50914;
+    background-color: #141414;
 }
 
-.nav-link {
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    list-style-type: none;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-link {
     color: #ffffff !important;
+    font-size: 1.1rem;
+    transition: color 0.2s;
 }
 
-.nav-link:hover {
-    color: #b81d24 !important;
+.navbar-nav .nav-link:hover {
+    color: #e50914 !important;
 }

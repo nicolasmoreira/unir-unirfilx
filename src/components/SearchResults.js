@@ -2,7 +2,7 @@ import React from 'react';
 import './SearchResults.css';
 import {Link} from "react-router-dom";
 
-const SearchResults = ({ results = [] }) => (
+const SearchResults = ({results = []}) => (
     <div className="search-results container">
         <div className="row">
             {results.map(movie => (

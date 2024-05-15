@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
-import { movies } from '../data';
+import React, {useState} from 'react';
+import {movies} from '../data';
 import './SearchBar.css';
 
-const SearchBar = ({ setResults }) => {
+const SearchBar = ({setResults}) => {
     const [query, setQuery] = useState('');
 
     const handleSearch = () => {
-        const filteredMovies = movies.filter(movie =>
-            movie.title.toLowerCase().includes(query.toLowerCase()) ||
-            movie.director.toLowerCase().includes(query.toLowerCase())
-        );
-        setResults(filteredMovies);
+        if (query.length >= 3) {
+            const filteredMovies = movies.filter(movie =>
+                movie.title.toLowerCase().includes(query.toLowerCase()) ||
+                movie.director.toLowerCase().includes(query.toLowerCase())
+            );
+            setResults(filteredMovies);
+        }
     };
 
     return (

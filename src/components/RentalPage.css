@@ -3,6 +3,20 @@
     color: #ffffff;
 }
 
-.rental-page h1, .rental-page h2 {
+.rental-page h1 {
     color: #e50914;
+}
+
+.rental-page__button {
+    background-color: #6c757d;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.rental-page__button:hover {
+    background-color: #5a6268;
 }
