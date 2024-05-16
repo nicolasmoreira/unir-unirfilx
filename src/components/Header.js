@@ -15,7 +15,10 @@ const Header = () => (
                             <Link className="nav-link" to="/movies">Películas</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/rentals">Alquileres</Link>
+                            <Link className="nav-link" to="/rentals">Mis Alquileres</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/purchases">Mis Compras</Link>
                         </li>
                     </ul>
                 </div>

@@ -40,3 +40,17 @@
 .movie-detail__button:hover {
     background-color: #b81d24;
 }
+
+.movie-detail__rating {
+    margin-top: 20px;
+}
+
+.star {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ccc;
+}
+
+.star.selected {
+    color: #e50914;
+}

@@ -1,8 +1,8 @@
-import React, { createContext, useState } from 'react';
+import React, {createContext, useState} from 'react';
 
 export const RentalContext = createContext();
 
-export const RentalProvider = ({ children }) => {
+export const RentalProvider = ({children}) => {
     const [rentals, setRentals] = useState([]);
 
     const addRental = (movie) => {
@@ -16,7 +16,7 @@ export const RentalProvider = ({ children }) => {
     };
 
     return (
-        <RentalContext.Provider value={{ rentals, addRental, returnRental }}>
+        <RentalContext.Provider value={{rentals, addRental, returnRental}}>
             {children}
         </RentalContext.Provider>
     );

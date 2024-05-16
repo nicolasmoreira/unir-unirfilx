@@ -9,7 +9,11 @@ const SearchBar = ({setResults}) => {
         if (query.length >= 3) {
             const filteredMovies = movies.filter(movie =>
                 movie.title.toLowerCase().includes(query.toLowerCase()) ||
-                movie.director.toLowerCase().includes(query.toLowerCase())
+                movie.director.toLowerCase().includes(query.toLowerCase()) ||
+                movie.year === parseInt(query, 10) ||
+                movie.synopsis.toLowerCase().includes(query.toLowerCase()) ||
+                movie.actors.indexOf(query.toLowerCase()) !== -1 ||
+                movie.category.toLowerCase().includes(query.toLowerCase())
             );
             setResults(filteredMovies);
         }
